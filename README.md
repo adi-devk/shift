@@ -1,107 +1,59 @@
-# ADM — Advanced Download Manager (iOS 1DM & Gopeed Clone)
+# Shift ⚡️
 
-> High-Speed Multi-Threaded Download Manager for iOS with authentic stock Apple iOS UI (iOS 18+ / iOS 26 HIG).
+> High-speed multi-threaded download manager and Safari-grade media browser for iOS. Built natively in SwiftUI with authentic Apple HIG design.
+
+[![iOS 17.0+](https://img.shields.io/badge/iOS-17.0%2B-blue.svg?style=flat&logo=apple)](https://developer.apple.com/ios/)
+[![Swift 5.10 / 6.0](https://img.shields.io/badge/Swift-5.10%20%2F%206.0-orange.svg?style=flat&logo=swift)](https://swift.org)
+[![Xcode 15 / 16](https://img.shields.io/badge/Xcode-15%20%2F%2016-blue.svg?style=flat&logo=xcode)](https://developer.apple.com/xcode/)
+[![Tests](https://img.shields.io/badge/Tests-24%20Passing-brightgreen.svg?style=flat)](Tests/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat)](LICENSE)
 
 ---
 
-## 📱 How to Open & Build in Xcode
+## ✨ Features
 
-### Method 1: Using the Native Xcode Project (`ADM.xcodeproj`) — **Recommended**
-1. Double-click or open **`ADM.xcodeproj`** in Xcode:
-   ```bash
-   open ADM.xcodeproj
-   ```
-2. Select your target device or simulator (e.g. **iPhone 16 Pro / iOS 18+** or Any iOS Device).
-3. Press **`Cmd + R`** (or click the Run button) to build and launch the app in the simulator or on your physical device!
+- 🚀 **Multi-Threaded Acceleration**: Up to 32 concurrent Range connections per task with dynamic chunk re-allocation and zero-gap file stitching.
+- 🌐 **Universal Resource Recognition**: Automatic resolver engine inspired by Gopeed — supports direct links, **Google Drive** (with automatic virus scan bypass & 8–16 threads), **Dropbox**, **GitHub Releases/Raw**, and 100+ MIME types.
+- 🔄 **Refresh Expired Links**: Easily update expired temporary download URLs without losing previously downloaded progress or bytes.
+- 📱 **Live Home Screen Widget**: Small, Medium, and Large widgets with edge-to-edge compact design and real-time background timeline extrapolation.
+- 🌍 **Multi-Tab Web Browser**: Full Safari-style browser with a 2-column tab switcher, private browsing, `aA` page tools, persistent search engines, and built-in media sniffer.
+- 🎬 **HLS Stream Downloader**: Downloads `.m3u8` master and variant streams concurrently and stitches segments into `.mp4` video files.
+- 🧲 **BitTorrent & Magnet**: Supports `.torrent` files and `magnet:?xt=urn:btih:...` URIs with piece verification.
+- 🔋 **Battery-Conscious Backgrounding**: Intelligent low-power background keepalive that only runs while active downloads are in progress.
+- 📁 **Built-in File Manager & Media Player**: Automatic categorization, PiP-enabled AVPlayer, and one-tap export to iOS Photos / Files.
 
-### Method 2: Opening via Swift Package Manager
-1. Open the project folder or `Package.swift` in Xcode:
-   ```bash
-   open Package.swift
-   ```
-2. Select the **`ShiftApp`** scheme.
-3. Press **`Cmd + R`** to Run or **`Cmd + U`** to run the 14 unit test suites.
+---
 
-### Method 3: Command Line Build & Tests
+## 🚀 Quick Start
+
+### 1. Build in Xcode
 ```bash
-# Run unit tests
+open Shift.xcodeproj
+```
+Select the **`Shift`** scheme and your target iOS device or Simulator, then press **`Cmd + R`**.
+
+### 2. Package `.ipa` for Sideloading (TrollStore / AltStore / SideStore)
+```bash
+./make_ipa.sh
+```
+The output `.ipa` will be generated at `Shift.ipa`.
+
+### 3. Run Tests
+```bash
 swift test
-
-# Build Xcode project for iOS Simulator
-xcodebuild -project ADM.xcodeproj -scheme ADM -destination 'generic/platform=iOS Simulator' build
 ```
 
 ---
 
-## ✨ Features & Capabilities
+## 🛠 Tech Stack & Requirements
 
-- **🚀 Multi-Threaded Range Engine**: Up to 32 concurrent chunk connections per download with dynamic chunk re-splitting and work-stealing.
-- **🎬 Universal Media Sniffer & Browser**: Built-in Safari-style WebKit browser that sniffs and captures HLS (`.m3u8`), direct MP4/WEBM video, audio streams, documents, and archives in real-time.
-- **⚡️ HLS Stream Downloader**: Downloads m3u8 master & variant streams concurrently and automatically stitches segments into clean `.mp4` video files.
-- **🧲 BitTorrent & Magnet Link Support**: Decodes `magnet:?xt=urn:btih:...` links and `.torrent` bencoded files with piece tracking.
-- **📊 Real-time Segment Visualizer & Speed Graph**: Visual multi-part thread progress bar (1DM hallmark) and live Bézier speed graph.
-- **📦 Batch Pattern Downloader**: Expands URL ranges like `https://example.com/episodes/ep_[01-24].mp4` or `[a-z]`.
-- **📁 Organized File Manager & AVPlayer**: Categorized folder system (Video, Audio, Docs, Archives, Torrents) with built-in Picture-in-Picture media player and Photos library export.
-- **⚙️ 100% Stock Apple Settings UI**: Inset Grouped lists with granular controls for thread pools, global speed limits, ad-blocker rules, and cache cleaner.
+- **Platform**: iOS 17.0+
+- **Language**: Swift 5.10 / Swift 6 (Strict Concurrency ready)
+- **UI Framework**: SwiftUI + WidgetKit + WebKit
+- **Architecture**: Modular MVVM + Reactive Combine Engine
 
 ---
 
-## 🏗 Architecture & Code Layout
+## 📄 License
 
-```
-ADM.xcodeproj/                          # Native Xcode Project Bundle
-├── project.pbxproj
-└── xcshareddata/xcschemes/ADM.xcscheme
-
-Sources/
-├── ShiftAppTarget/
-│   └── ShiftApplication.swift            # SwiftUI @main App Entrypoint
-└── ADM/
-    ├── App/
-    │   ├── ShiftApp.swift                # Root View container
-    │   └── AppEnvironment.swift        # Dependency injection & state persistence
-    ├── Core/
-    │   ├── Models/
-    │   │   ├── DownloadTask.swift      # Download task entity with speed history
-    │   │   ├── DownloadSegment.swift   # Chunk/thread offset state model
-    │   │   ├── SniffedMedia.swift      # Extracted web media representation
-    │   │   ├── TorrentMeta.swift       # Magnet link and torrent metadata
-    │   │   ├── TaskCategory.swift      # Category enum & MIME detector
-    │   │   └── AppSettings.swift       # User settings model
-    │   ├── Engine/
-    │   │   ├── ShiftDownloadEngine.swift # Central orchestrator & queue manager
-    │   │   ├── ChunkedDownloader.swift # HTTP Range multi-thread downloader
-    │   │   ├── HLSStreamDownloader.swift # m3u8 parser & segment stitcher
-    │   │   ├── TorrentEngine.swift     # Magnet resolver & BitTorrent worker
-    │   │   ├── SpeedLimiter.swift      # Token-bucket rate limiter
-    │   │   └── BackgroundManager.swift # URLSession background delegate
-    │   ├── Sniffer/
-    │   │   ├── ShiftMediaSniffer.swift   # JavaScript injection & media sniffer
-    │   │   └── ContentBlocker.swift    # AdBlock & Tracker blocker rules
-    │   └── Storage/
-    │       ├── TaskManager.swift       # JSON store persistence
-    │       └── FileStorageService.swift# Category directories & storage breakdown
-    └── UI/
-        ├── MainTabView.swift           # Root TabBar (Downloads, Browser, Files, Settings)
-        ├── Downloads/
-        │   ├── DownloadsListView.swift # Filterable download list & speed ticker
-        │   ├── DownloadRowView.swift   # Task card with multi-segment visualizer
-        │   ├── DownloadDetailView.swift# Detailed task inspector & speed chart
-        │   ├── NewDownloadSheet.swift  # URL modal & inspector
-        │   └── BatchDownloadSheet.swift# Pattern URL generator
-        ├── Browser/
-        │   ├── BrowserView.swift       # WebKit browser with address bar
-        │   ├── SnifferHUDView.swift    # Floating media sniffer badge & sheet
-        │   └── BookmarksHistoryView.swift # Bookmarks and history list
-        ├── Files/
-        │   ├── FilesListView.swift     # Category pill carousel & file actions
-        │   └── MediaPlayerView.swift   # AVPlayer with PiP & speed controls
-        ├── Settings/
-        │   ├── SettingsView.swift      # Apple Settings clone
-        │   └── SubSettingsViews.swift  # Network, Sniffer, and Storage settings
-        └── Components/
-            ├── MultiSegmentProgressBar.swift # Multi-threaded chunk progress visualizer
-            ├── SpeedChartView.swift    # Live Bézier speed curve
-            ├── AppleStyleComponents.swift # Badges, pills, glass cards, haptics
-            └── PlatformHelpers.swift   # Cross-platform modifiers & ShareSheet
-```
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
