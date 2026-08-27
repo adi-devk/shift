@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D5502413485EF1BBE88287 /* Sources/Shift/UI/Downloads/BatchDownloadSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B953170CE59A1B34488C9 /* Sources/Shift/UI/Downloads/BatchDownloadSheet.swift */; };
+		0248AA750DB25D4BBC82426D /* Sources/Shift/Core/Engine/GoogleDriveURLResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7003A7141FE518D8CE932A0 /* Sources/Shift/Core/Engine/GoogleDriveURLResolver.swift */; };
+		0A6AAC1DAA675C8592FE6367 /* Sources/Shift/Core/Services/BackgroundDownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE690FCF171E5178B8741F90 /* Sources/Shift/Core/Services/BackgroundDownloadService.swift */; };
+		142819A265CE57C2A5A96586 /* Sources/ShiftWidgetTarget/ShiftWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D303A0DABB5966A83D211D /* Sources/ShiftWidgetTarget/ShiftWidgetBundle.swift */; };
+		178E469B6401578983718D77 /* Sources/Shift/UI/MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F73FF77D585883AE4F9E5C /* Sources/Shift/UI/MainTabView.swift */; };
+		233C76AF7FD65B1AA035F7E1 /* Sources/Shift/Core/Models/DownloadSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E246E8BA45C159994D7DD /* Sources/Shift/Core/Models/DownloadSegment.swift */; };
+		25FE66D3F67F562EACAAF11C /* Sources/Shift/Core/Models/TorrentMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78174C2593E55460A9E8587E /* Sources/Shift/Core/Models/TorrentMeta.swift */; };
+		37DACD1367E95E43A35A25F4 /* Sources/Shift/UI/Widget/ShiftWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D62808FECF574EB2721A5C /* Sources/Shift/UI/Widget/ShiftWidget.swift */; };
+		3FDA3EC854605586A5E18B1B /* Sources/Shift/UI/Downloads/DownloadRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F1D920219754D086800388 /* Sources/Shift/UI/Downloads/DownloadRowView.swift */; };
+		400A0A5F85D85C81942F970D /* Sources/Shift/UI/Browser/BrowserTabOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0AA73727C6E58C6A9C045C6 /* Sources/Shift/UI/Browser/BrowserTabOverviewView.swift */; };
+		4249F0C4D787535194630030 /* Sources/Shift/Core/Models/DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB1BE76F915550A0731BE2 /* Sources/Shift/Core/Models/DownloadTask.swift */; };
+		44D500EE3CD459C3AD116194 /* Sources/ShiftAppTarget/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202F95C49903576092D7F3B7 /* Sources/ShiftAppTarget/Assets.xcassets */; };
+		457DB5776B865015B1AA8430 /* Sources/ShiftAppTarget/ShiftApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB84659A7E5DC5AFD8CAB7 /* Sources/ShiftAppTarget/ShiftApplication.swift */; };
+		480DE110EB3C5B91A939AD64 /* Sources/Shift/Core/Engine/TorrentEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23474E9C0BD7525F978C6C5E /* Sources/Shift/Core/Engine/TorrentEngine.swift */; };
+		4FE40CC6209B52EC850D977B /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CD6D6D584C517D816A9E27 /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift */; };
+		52C9FD7CEA04561ABD0C2E7D /* Sources/Shift/Core/Sniffer/ShiftMediaSniffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417F6D2CED653A7BE28ACDC /* Sources/Shift/Core/Sniffer/ShiftMediaSniffer.swift */; };
+		5E58FABCDB4F5F098381AF69 /* Sources/Shift/Core/Sniffer/ContentBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2099C21CC7C65F41BFA44B6D /* Sources/Shift/Core/Sniffer/ContentBlocker.swift */; };
+		69529D36AEFE5A3F90097619 /* Sources/Shift/Core/Models/TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B3F25E60D553186E2087B /* Sources/Shift/Core/Models/TaskCategory.swift */; };
+		69E770FC80FE523399F2752B /* Sources/Shift/Core/Browser/BrowserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386400B5FB2E5EE8917E6B7F /* Sources/Shift/Core/Browser/BrowserModels.swift */; };
+		6A8DB4AD48FF5965B4648846 /* Sources/Shift/UI/Settings/SubSettingsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B2CF3E1E835DDB946F482B /* Sources/Shift/UI/Settings/SubSettingsViews.swift */; };
+		703243178B97568981FFE7FC /* Sources/Shift/Core/Models/WidgetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233B8D707B259AAA1EEE2D5 /* Sources/Shift/Core/Models/WidgetModels.swift */; };
+		721996601FDE55B88B32743F /* Sources/Shift/Core/Engine/ShiftDownloadEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6139B3A3AD5F769E235B26 /* Sources/Shift/Core/Engine/ShiftDownloadEngine.swift */; };
+		7236355762845378B49CC0E1 /* Sources/Shift/UI/Browser/SnifferHUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1734B90CA2955782AD7967BD /* Sources/Shift/UI/Browser/SnifferHUDView.swift */; };
+		74B437A351AB57C09AE7DE1B /* Sources/Shift/Core/Services/ShiftLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF54DBAC0D65FF48794D3A3 /* Sources/Shift/Core/Services/ShiftLogger.swift */; };
+		74C2B9E9707F5B44809880DE /* ShiftWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 923B7EFCE6F55EA795C9569C /* ShiftWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		794DA2A75A8B5295A647F8B5 /* Sources/Shift/UI/Browser/BrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C500E166A59749AEB11C3 /* Sources/Shift/UI/Browser/BrowserView.swift */; };
+		7DA3D97EA4D25FB297098297 /* Sources/Shift/Core/Engine/HLSStreamDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958EF9EE3A265040A15FACFB /* Sources/Shift/Core/Engine/HLSStreamDownloader.swift */; };
+		7DC442F6AA4F589EB0A336BA /* Sources/Shift/Core/Storage/TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B998B9C5A25D9881E7BBE8 /* Sources/Shift/Core/Storage/TaskManager.swift */; };
+		7FB88B1626B55215BF9C737F /* Sources/Shift/UI/Browser/FindOnPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F937B08F36DF597A8A8153F3 /* Sources/Shift/UI/Browser/FindOnPageView.swift */; };
+		811E843DCEB054AE9D7DC0EF /* Sources/Shift/App/ShiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5D5C43E296558EA3C78A39 /* Sources/Shift/App/ShiftApp.swift */; };
+		8A1BB71DC63B54FE85705313 /* Sources/Shift/Core/Models/TaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288B3F25E60D553186E2087B /* Sources/Shift/Core/Models/TaskCategory.swift */; };
+		8BEC4247504D5F319A113FDE /* Sources/Shift/UI/Downloads/NewDownloadSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629D193AD2075DC2BC8F1A03 /* Sources/Shift/UI/Downloads/NewDownloadSheet.swift */; };
+		8CE4CD9FFBAB560F96CB16F6 /* Sources/Shift/Core/Services/WidgetDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AEA5F2335B57A2D736E6 /* Sources/Shift/Core/Services/WidgetDataManager.swift */; };
+		918157663AE7527DAA8DA437 /* Sources/Shift/UI/Components/MultiSegmentProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6C71E3E4A3563A8101368A /* Sources/Shift/UI/Components/MultiSegmentProgressBar.swift */; };
+		922521261DEF568280DD0E50 /* Sources/Shift/UI/Widget/ShiftWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D62808FECF574EB2721A5C /* Sources/Shift/UI/Widget/ShiftWidget.swift */; };
+		95E19F0F94795E5FBB4303CB /* Sources/Shift/UI/Components/AppleStyleComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52A6287396357A68FE0D66A /* Sources/Shift/UI/Components/AppleStyleComponents.swift */; };
+		99F5FF15825E57849D0C9402 /* Sources/Shift/UI/Files/MediaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ACDC79343E5C6F89CE50C5 /* Sources/Shift/UI/Files/MediaPlayerView.swift */; };
+		A4A5B897C932569495D802B2 /* Sources/Shift/Core/Models/WidgetModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E233B8D707B259AAA1EEE2D5 /* Sources/Shift/Core/Models/WidgetModels.swift */; };
+		B0E106CBAE2157BDA5608026 /* Sources/Shift/Core/Models/AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E32F24BD685E98BBD1626E /* Sources/Shift/Core/Models/AppSettings.swift */; };
+		B632CFACE71A5EB2B129836D /* Sources/Shift/Core/Storage/FileStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FD2AF4062653D390FFD44A /* Sources/Shift/Core/Storage/FileStorageService.swift */; };
+		C62CAFFA5099570DACDA8166 /* Sources/Shift/UI/Downloads/DownloadDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3272C0DCD654549BD77E00 /* Sources/Shift/UI/Downloads/DownloadDetailView.swift */; };
+		C6E5B9FB1F3B5DA68BD637E8 /* Sources/Shift/UI/Downloads/ChangeURLSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89F0D496D75E8CB9302FF3 /* Sources/Shift/UI/Downloads/ChangeURLSheet.swift */; };
+		C9ED302D8C1C563B87626274 /* Sources/Shift/UI/Components/SpeedChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD8742A7CD5619888D16E0 /* Sources/Shift/UI/Components/SpeedChartView.swift */; };
+		CD493609BAF35D559CA47C68 /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CD6D6D584C517D816A9E27 /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift */; };
+		CD5AF9DD7E415D048140C2D2 /* Sources/Shift/Core/Engine/ChunkedDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6532733E405194A5CD2595 /* Sources/Shift/Core/Engine/ChunkedDownloader.swift */; };
+		CEEBB028C3B45D2996DFA0DD /* Sources/Shift/Core/Models/SniffedMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = A211EF85645C54989BE798E8 /* Sources/Shift/Core/Models/SniffedMedia.swift */; };
+		D172AD2F3A25557FA9D7C5E3 /* Sources/Shift/Core/Engine/SpeedLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D916F2B32CAB5734ABD3422F /* Sources/Shift/Core/Engine/SpeedLimiter.swift */; };
+		D255B537E6315030A5FDC9ED /* Sources/Shift/Core/Engine/BackgroundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809FE651F5A95DACBB3D4D76 /* Sources/Shift/Core/Engine/BackgroundManager.swift */; };
+		D67717E5B6A953FE9B942190 /* Sources/Shift/UI/Browser/BookmarksHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A33751E16567BB088CF10 /* Sources/Shift/UI/Browser/BookmarksHistoryView.swift */; };
+		D6E0DDDBD99E5DB69687A96D /* Sources/Shift/UI/Components/PlatformHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97731015DA9153F3A536DA52 /* Sources/Shift/UI/Components/PlatformHelpers.swift */; };
+		D770D3F4582253E99919261D /* Sources/Shift/UI/Downloads/DownloadsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1015B1B521B854F397248072 /* Sources/Shift/UI/Downloads/DownloadsListView.swift */; };
+		E3BD4A843D255934A5615017 /* Sources/Shift/UI/Files/FilesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC130B36D9BB5BF6AD32121F /* Sources/Shift/UI/Files/FilesListView.swift */; };
+		E562287229295913B10D6E46 /* Sources/Shift/App/AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0631313A1B0E5F8E8AF660BA /* Sources/Shift/App/AppEnvironment.swift */; };
+		E877831A0EF958C0BD14E82A /* Sources/Shift/Core/Browser/BrowserTabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D089D5999A5694A15B5711 /* Sources/Shift/Core/Browser/BrowserTabManager.swift */; };
+		E986371570225CF1957C80D9 /* Sources/Shift/Core/Models/DownloadSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E246E8BA45C159994D7DD /* Sources/Shift/Core/Models/DownloadSegment.swift */; };
+		EA4DF3CEF458511DA60AD180 /* Sources/Shift/Core/Engine/UniversalURLResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAD29CD8EC25BFDA32CF7B9 /* Sources/Shift/Core/Engine/UniversalURLResolver.swift */; };
+		F5F2A63F4AC85DBBAFFEFA26 /* Sources/Shift/UI/Browser/BrowserPageMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8561FAFB60705F47BA1DD461 /* Sources/Shift/UI/Browser/BrowserPageMenuView.swift */; };
+		F97326E11BC652EA961FF167 /* Sources/Shift/Core/Services/WidgetDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E4AEA5F2335B57A2D736E6 /* Sources/Shift/Core/Services/WidgetDataManager.swift */; };
+		FE25B15BD4305D18B59DD5C6 /* Sources/Shift/UI/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F866F8993E5D48AD8DEE4A /* Sources/Shift/UI/Settings/SettingsView.swift */; };
+		FE71970BDC6E5E8D8A9A1799 /* Sources/Shift/Core/Models/DownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADB1BE76F915550A0731BE2 /* Sources/Shift/Core/Models/DownloadTask.swift */; };
+		FF8ABEB7509B570B8FB3F743 /* Sources/Shift/UI/Settings/DiagnosticsLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB29BD237AD75454B11D81AC /* Sources/Shift/UI/Settings/DiagnosticsLogView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5774106BCD55969B89D6E9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5AE07C91D6650B987528392 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 831B2282468753829DE49088;
+			remoteInfo = ShiftWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F409EB9F4E750CA8388B8CF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74C2B9E9707F5B44809880DE /* ShiftWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0631313A1B0E5F8E8AF660BA /* Sources/Shift/App/AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/App/AppEnvironment.swift; sourceTree = SOURCE_ROOT; };
+		096A33751E16567BB088CF10 /* Sources/Shift/UI/Browser/BookmarksHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Browser/BookmarksHistoryView.swift; sourceTree = SOURCE_ROOT; };
+		0B3272C0DCD654549BD77E00 /* Sources/Shift/UI/Downloads/DownloadDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Downloads/DownloadDetailView.swift; sourceTree = SOURCE_ROOT; };
+		1015B1B521B854F397248072 /* Sources/Shift/UI/Downloads/DownloadsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Downloads/DownloadsListView.swift; sourceTree = SOURCE_ROOT; };
+		11CD8742A7CD5619888D16E0 /* Sources/Shift/UI/Components/SpeedChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Components/SpeedChartView.swift; sourceTree = SOURCE_ROOT; };
+		1734B90CA2955782AD7967BD /* Sources/Shift/UI/Browser/SnifferHUDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Browser/SnifferHUDView.swift; sourceTree = SOURCE_ROOT; };
+		1F6139B3A3AD5F769E235B26 /* Sources/Shift/Core/Engine/ShiftDownloadEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/ShiftDownloadEngine.swift; sourceTree = SOURCE_ROOT; };
+		202F95C49903576092D7F3B7 /* Sources/ShiftAppTarget/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sources/ShiftAppTarget/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		2099C21CC7C65F41BFA44B6D /* Sources/Shift/Core/Sniffer/ContentBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Sniffer/ContentBlocker.swift; sourceTree = SOURCE_ROOT; };
+		23474E9C0BD7525F978C6C5E /* Sources/Shift/Core/Engine/TorrentEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/TorrentEngine.swift; sourceTree = SOURCE_ROOT; };
+		25FD2AF4062653D390FFD44A /* Sources/Shift/Core/Storage/FileStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Storage/FileStorageService.swift; sourceTree = SOURCE_ROOT; };
+		288B3F25E60D553186E2087B /* Sources/Shift/Core/Models/TaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Models/TaskCategory.swift; sourceTree = SOURCE_ROOT; };
+		2A89F0D496D75E8CB9302FF3 /* Sources/Shift/UI/Downloads/ChangeURLSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Downloads/ChangeURLSheet.swift; sourceTree = SOURCE_ROOT; };
+		386400B5FB2E5EE8917E6B7F /* Sources/Shift/Core/Browser/BrowserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Browser/BrowserModels.swift; sourceTree = SOURCE_ROOT; };
+		38D303A0DABB5966A83D211D /* Sources/ShiftWidgetTarget/ShiftWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/ShiftWidgetTarget/ShiftWidgetBundle.swift; sourceTree = SOURCE_ROOT; };
+		3ADB1BE76F915550A0731BE2 /* Sources/Shift/Core/Models/DownloadTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Models/DownloadTask.swift; sourceTree = SOURCE_ROOT; };
+		4056DD97716D5FA0A94B59ED /* Sources/ShiftAppTarget/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Sources/ShiftAppTarget/Info.plist; sourceTree = SOURCE_ROOT; };
+		4A6C71E3E4A3563A8101368A /* Sources/Shift/UI/Components/MultiSegmentProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Components/MultiSegmentProgressBar.swift; sourceTree = SOURCE_ROOT; };
+		4AAD29CD8EC25BFDA32CF7B9 /* Sources/Shift/Core/Engine/UniversalURLResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/UniversalURLResolver.swift; sourceTree = SOURCE_ROOT; };
+		4E6532733E405194A5CD2595 /* Sources/Shift/Core/Engine/ChunkedDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/ChunkedDownloader.swift; sourceTree = SOURCE_ROOT; };
+		529142AA96C45BD9ADFFCD50 /* Sources/ShiftWidgetTarget/ShiftWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sources/ShiftWidgetTarget/ShiftWidgetExtension.entitlements; sourceTree = SOURCE_ROOT; };
+		54ACDC79343E5C6F89CE50C5 /* Sources/Shift/UI/Files/MediaPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Files/MediaPlayerView.swift; sourceTree = SOURCE_ROOT; };
+		5D0B953170CE59A1B34488C9 /* Sources/Shift/UI/Downloads/BatchDownloadSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Downloads/BatchDownloadSheet.swift; sourceTree = SOURCE_ROOT; };
+		629D193AD2075DC2BC8F1A03 /* Sources/Shift/UI/Downloads/NewDownloadSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Downloads/NewDownloadSheet.swift; sourceTree = SOURCE_ROOT; };
+		62B2CF3E1E835DDB946F482B /* Sources/Shift/UI/Settings/SubSettingsViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Settings/SubSettingsViews.swift; sourceTree = SOURCE_ROOT; };
+		6C3E246E8BA45C159994D7DD /* Sources/Shift/Core/Models/DownloadSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Models/DownloadSegment.swift; sourceTree = SOURCE_ROOT; };
+		78174C2593E55460A9E8587E /* Sources/Shift/Core/Models/TorrentMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Models/TorrentMeta.swift; sourceTree = SOURCE_ROOT; };
+		78E32F24BD685E98BBD1626E /* Sources/Shift/Core/Models/AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Models/AppSettings.swift; sourceTree = SOURCE_ROOT; };
+		809FE651F5A95DACBB3D4D76 /* Sources/Shift/Core/Engine/BackgroundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/BackgroundManager.swift; sourceTree = SOURCE_ROOT; };
+		8561FAFB60705F47BA1DD461 /* Sources/Shift/UI/Browser/BrowserPageMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Browser/BrowserPageMenuView.swift; sourceTree = SOURCE_ROOT; };
+		87F1D920219754D086800388 /* Sources/Shift/UI/Downloads/DownloadRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Downloads/DownloadRowView.swift; sourceTree = SOURCE_ROOT; };
+		923B7EFCE6F55EA795C9569C /* ShiftWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShiftWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CD6D6D584C517D816A9E27 /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Services/KeychainWidgetBridge.swift; sourceTree = SOURCE_ROOT; };
+		93114722E2AA5BBB81F49101 /* Sources/ShiftWidgetTarget/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Sources/ShiftWidgetTarget/Info.plist; sourceTree = SOURCE_ROOT; };
+		958EF9EE3A265040A15FACFB /* Sources/Shift/Core/Engine/HLSStreamDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/HLSStreamDownloader.swift; sourceTree = SOURCE_ROOT; };
+		963922EECAF55346B734A726 /* Shift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97731015DA9153F3A536DA52 /* Sources/Shift/UI/Components/PlatformHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Components/PlatformHelpers.swift; sourceTree = SOURCE_ROOT; };
+		97F866F8993E5D48AD8DEE4A /* Sources/Shift/UI/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Settings/SettingsView.swift; sourceTree = SOURCE_ROOT; };
+		A0D62808FECF574EB2721A5C /* Sources/Shift/UI/Widget/ShiftWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Widget/ShiftWidget.swift; sourceTree = SOURCE_ROOT; };
+		A1D089D5999A5694A15B5711 /* Sources/Shift/Core/Browser/BrowserTabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Browser/BrowserTabManager.swift; sourceTree = SOURCE_ROOT; };
+		A211EF85645C54989BE798E8 /* Sources/Shift/Core/Models/SniffedMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Models/SniffedMedia.swift; sourceTree = SOURCE_ROOT; };
+		B4B998B9C5A25D9881E7BBE8 /* Sources/Shift/Core/Storage/TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Storage/TaskManager.swift; sourceTree = SOURCE_ROOT; };
+		B7003A7141FE518D8CE932A0 /* Sources/Shift/Core/Engine/GoogleDriveURLResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/GoogleDriveURLResolver.swift; sourceTree = SOURCE_ROOT; };
+		BE690FCF171E5178B8741F90 /* Sources/Shift/Core/Services/BackgroundDownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Services/BackgroundDownloadService.swift; sourceTree = SOURCE_ROOT; };
+		C3E4AEA5F2335B57A2D736E6 /* Sources/Shift/Core/Services/WidgetDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Services/WidgetDataManager.swift; sourceTree = SOURCE_ROOT; };
+		C52A6287396357A68FE0D66A /* Sources/Shift/UI/Components/AppleStyleComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Components/AppleStyleComponents.swift; sourceTree = SOURCE_ROOT; };
+		C8F73FF77D585883AE4F9E5C /* Sources/Shift/UI/MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/MainTabView.swift; sourceTree = SOURCE_ROOT; };
+		D417F6D2CED653A7BE28ACDC /* Sources/Shift/Core/Sniffer/ShiftMediaSniffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Sniffer/ShiftMediaSniffer.swift; sourceTree = SOURCE_ROOT; };
+		D916F2B32CAB5734ABD3422F /* Sources/Shift/Core/Engine/SpeedLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Engine/SpeedLimiter.swift; sourceTree = SOURCE_ROOT; };
+		DBAB84659A7E5DC5AFD8CAB7 /* Sources/ShiftAppTarget/ShiftApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/ShiftAppTarget/ShiftApplication.swift; sourceTree = SOURCE_ROOT; };
+		DC130B36D9BB5BF6AD32121F /* Sources/Shift/UI/Files/FilesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Files/FilesListView.swift; sourceTree = SOURCE_ROOT; };
+		DD563AB51230530F89377924 /* Sources/ShiftAppTarget/Shift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sources/ShiftAppTarget/Shift.entitlements; sourceTree = SOURCE_ROOT; };
+		DDF54DBAC0D65FF48794D3A3 /* Sources/Shift/Core/Services/ShiftLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Services/ShiftLogger.swift; sourceTree = SOURCE_ROOT; };
+		E0AA73727C6E58C6A9C045C6 /* Sources/Shift/UI/Browser/BrowserTabOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Browser/BrowserTabOverviewView.swift; sourceTree = SOURCE_ROOT; };
+		E233B8D707B259AAA1EEE2D5 /* Sources/Shift/Core/Models/WidgetModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/Core/Models/WidgetModels.swift; sourceTree = SOURCE_ROOT; };
+		EB29BD237AD75454B11D81AC /* Sources/Shift/UI/Settings/DiagnosticsLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Settings/DiagnosticsLogView.swift; sourceTree = SOURCE_ROOT; };
+		EB5D5C43E296558EA3C78A39 /* Sources/Shift/App/ShiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/App/ShiftApp.swift; sourceTree = SOURCE_ROOT; };
+		F937B08F36DF597A8A8153F3 /* Sources/Shift/UI/Browser/FindOnPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Browser/FindOnPageView.swift; sourceTree = SOURCE_ROOT; };
+		FC4C500E166A59749AEB11C3 /* Sources/Shift/UI/Browser/BrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/Shift/UI/Browser/BrowserView.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		489A404DF3FB5F09A938BB2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4B73C018B65BDFA9DAED6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E4BBC74D06D58208ADC339A /* Downloads */ = {
+			isa = PBXGroup;
+			children = (
+				5D0B953170CE59A1B34488C9 /* Sources/Shift/UI/Downloads/BatchDownloadSheet.swift */,
+				2A89F0D496D75E8CB9302FF3 /* Sources/Shift/UI/Downloads/ChangeURLSheet.swift */,
+				0B3272C0DCD654549BD77E00 /* Sources/Shift/UI/Downloads/DownloadDetailView.swift */,
+				87F1D920219754D086800388 /* Sources/Shift/UI/Downloads/DownloadRowView.swift */,
+				1015B1B521B854F397248072 /* Sources/Shift/UI/Downloads/DownloadsListView.swift */,
+				629D193AD2075DC2BC8F1A03 /* Sources/Shift/UI/Downloads/NewDownloadSheet.swift */,
+			);
+			path = Downloads;
+			sourceTree = "<group>";
+		};
+		1B67DEFB17ED5FDD83EBCB2A /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				809FE651F5A95DACBB3D4D76 /* Sources/Shift/Core/Engine/BackgroundManager.swift */,
+				4E6532733E405194A5CD2595 /* Sources/Shift/Core/Engine/ChunkedDownloader.swift */,
+				B7003A7141FE518D8CE932A0 /* Sources/Shift/Core/Engine/GoogleDriveURLResolver.swift */,
+				958EF9EE3A265040A15FACFB /* Sources/Shift/Core/Engine/HLSStreamDownloader.swift */,
+				1F6139B3A3AD5F769E235B26 /* Sources/Shift/Core/Engine/ShiftDownloadEngine.swift */,
+				D916F2B32CAB5734ABD3422F /* Sources/Shift/Core/Engine/SpeedLimiter.swift */,
+				23474E9C0BD7525F978C6C5E /* Sources/Shift/Core/Engine/TorrentEngine.swift */,
+				4AAD29CD8EC25BFDA32CF7B9 /* Sources/Shift/Core/Engine/UniversalURLResolver.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		1F6E5020166351519283B4B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				963922EECAF55346B734A726 /* Shift.app */,
+				923B7EFCE6F55EA795C9569C /* ShiftWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		214108F9EE5C582FBE4A02AE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CC228E505574099F857A6 /* Shift */,
+				FF4E38F9DDEA5ED296E31E43 /* ShiftAppTarget */,
+				EA76CF20037B53F0BAF55B5B /* ShiftWidgetTarget */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		25C14720CA77559D9F1EFBD9 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				386400B5FB2E5EE8917E6B7F /* Sources/Shift/Core/Browser/BrowserModels.swift */,
+				A1D089D5999A5694A15B5711 /* Sources/Shift/Core/Browser/BrowserTabManager.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		3019E19E6ADE5D6F9A38C2EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C52A6287396357A68FE0D66A /* Sources/Shift/UI/Components/AppleStyleComponents.swift */,
+				4A6C71E3E4A3563A8101368A /* Sources/Shift/UI/Components/MultiSegmentProgressBar.swift */,
+				97731015DA9153F3A536DA52 /* Sources/Shift/UI/Components/PlatformHelpers.swift */,
+				11CD8742A7CD5619888D16E0 /* Sources/Shift/UI/Components/SpeedChartView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3069DDB246C659D58EAFE5A4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EB29BD237AD75454B11D81AC /* Sources/Shift/UI/Settings/DiagnosticsLogView.swift */,
+				97F866F8993E5D48AD8DEE4A /* Sources/Shift/UI/Settings/SettingsView.swift */,
+				62B2CF3E1E835DDB946F482B /* Sources/Shift/UI/Settings/SubSettingsViews.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		33C5103EAB855F849C7DDF8F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				76013458205B5195A7284E5D /* Browser */,
+				3019E19E6ADE5D6F9A38C2EB /* Components */,
+				0E4BBC74D06D58208ADC339A /* Downloads */,
+				BFE34E1FA383503C82487C44 /* Files */,
+				C8F73FF77D585883AE4F9E5C /* Sources/Shift/UI/MainTabView.swift */,
+				3069DDB246C659D58EAFE5A4 /* Settings */,
+				60A87CC7315F5B28A8AC3540 /* Widget */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		60A87CC7315F5B28A8AC3540 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				A0D62808FECF574EB2721A5C /* Sources/Shift/UI/Widget/ShiftWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		66A71F1040365402B58FCF88 /* Sniffer */ = {
+			isa = PBXGroup;
+			children = (
+				2099C21CC7C65F41BFA44B6D /* Sources/Shift/Core/Sniffer/ContentBlocker.swift */,
+				D417F6D2CED653A7BE28ACDC /* Sources/Shift/Core/Sniffer/ShiftMediaSniffer.swift */,
+			);
+			path = Sniffer;
+			sourceTree = "<group>";
+		};
+		76013458205B5195A7284E5D /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				096A33751E16567BB088CF10 /* Sources/Shift/UI/Browser/BookmarksHistoryView.swift */,
+				8561FAFB60705F47BA1DD461 /* Sources/Shift/UI/Browser/BrowserPageMenuView.swift */,
+				E0AA73727C6E58C6A9C045C6 /* Sources/Shift/UI/Browser/BrowserTabOverviewView.swift */,
+				FC4C500E166A59749AEB11C3 /* Sources/Shift/UI/Browser/BrowserView.swift */,
+				F937B08F36DF597A8A8153F3 /* Sources/Shift/UI/Browser/FindOnPageView.swift */,
+				1734B90CA2955782AD7967BD /* Sources/Shift/UI/Browser/SnifferHUDView.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		7C176B3EA8B552BCAA2C9B92 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE690FCF171E5178B8741F90 /* Sources/Shift/Core/Services/BackgroundDownloadService.swift */,
+				92CD6D6D584C517D816A9E27 /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift */,
+				DDF54DBAC0D65FF48794D3A3 /* Sources/Shift/Core/Services/ShiftLogger.swift */,
+				C3E4AEA5F2335B57A2D736E6 /* Sources/Shift/Core/Services/WidgetDataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA55778A5ED7501FB160F49B /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				25FD2AF4062653D390FFD44A /* Sources/Shift/Core/Storage/FileStorageService.swift */,
+				B4B998B9C5A25D9881E7BBE8 /* Sources/Shift/Core/Storage/TaskManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		BFE34E1FA383503C82487C44 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC130B36D9BB5BF6AD32121F /* Sources/Shift/UI/Files/FilesListView.swift */,
+				54ACDC79343E5C6F89CE50C5 /* Sources/Shift/UI/Files/MediaPlayerView.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		CEF01AFD876A5F2FA205A4E3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25C14720CA77559D9F1EFBD9 /* Browser */,
+				1B67DEFB17ED5FDD83EBCB2A /* Engine */,
+				EA338567A15057AE816B4A2C /* Models */,
+				7C176B3EA8B552BCAA2C9B92 /* Services */,
+				66A71F1040365402B58FCF88 /* Sniffer */,
+				AA55778A5ED7501FB160F49B /* Storage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D0183F7979BC5584AB071E45 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0631313A1B0E5F8E8AF660BA /* Sources/Shift/App/AppEnvironment.swift */,
+				EB5D5C43E296558EA3C78A39 /* Sources/Shift/App/ShiftApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DDB104D47CCF5AC792FAD685 = {
+			isa = PBXGroup;
+			children = (
+				214108F9EE5C582FBE4A02AE /* Sources */,
+				1F6E5020166351519283B4B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF9CC228E505574099F857A6 /* Shift */ = {
+			isa = PBXGroup;
+			children = (
+				D0183F7979BC5584AB071E45 /* App */,
+				CEF01AFD876A5F2FA205A4E3 /* Core */,
+				33C5103EAB855F849C7DDF8F /* UI */,
+			);
+			path = Shift;
+			sourceTree = "<group>";
+		};
+		EA338567A15057AE816B4A2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78E32F24BD685E98BBD1626E /* Sources/Shift/Core/Models/AppSettings.swift */,
+				6C3E246E8BA45C159994D7DD /* Sources/Shift/Core/Models/DownloadSegment.swift */,
+				3ADB1BE76F915550A0731BE2 /* Sources/Shift/Core/Models/DownloadTask.swift */,
+				A211EF85645C54989BE798E8 /* Sources/Shift/Core/Models/SniffedMedia.swift */,
+				288B3F25E60D553186E2087B /* Sources/Shift/Core/Models/TaskCategory.swift */,
+				78174C2593E55460A9E8587E /* Sources/Shift/Core/Models/TorrentMeta.swift */,
+				E233B8D707B259AAA1EEE2D5 /* Sources/Shift/Core/Models/WidgetModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA76CF20037B53F0BAF55B5B /* ShiftWidgetTarget */ = {
+			isa = PBXGroup;
+			children = (
+				38D303A0DABB5966A83D211D /* Sources/ShiftWidgetTarget/ShiftWidgetBundle.swift */,
+				93114722E2AA5BBB81F49101 /* Sources/ShiftWidgetTarget/Info.plist */,
+				529142AA96C45BD9ADFFCD50 /* Sources/ShiftWidgetTarget/ShiftWidgetExtension.entitlements */,
+			);
+			path = ShiftWidgetTarget;
+			sourceTree = "<group>";
+		};
+		FF4E38F9DDEA5ED296E31E43 /* ShiftAppTarget */ = {
+			isa = PBXGroup;
+			children = (
+				DBAB84659A7E5DC5AFD8CAB7 /* Sources/ShiftAppTarget/ShiftApplication.swift */,
+				4056DD97716D5FA0A94B59ED /* Sources/ShiftAppTarget/Info.plist */,
+				DD563AB51230530F89377924 /* Sources/ShiftAppTarget/Shift.entitlements */,
+				202F95C49903576092D7F3B7 /* Sources/ShiftAppTarget/Assets.xcassets */,
+			);
+			path = ShiftAppTarget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		272C7391B58D544D8F72E79C /* Shift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A303A428792C583B99CB9E10 /* Build configuration list for PBXNativeTarget "Shift" */;
+			buildPhases = (
+				7859CD8A89E65D0F8AE136EE /* Sources */,
+				489A404DF3FB5F09A938BB2E /* Frameworks */,
+				772E72B64A895884B64D6EAA /* Resources */,
+				3F409EB9F4E750CA8388B8CF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D346FEB3E1315E33BA625E22 /* PBXTargetDependency */,
+			);
+			name = Shift;
+			productName = Shift;
+			productReference = 963922EECAF55346B734A726 /* Shift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		831B2282468753829DE49088 /* ShiftWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7FEB9854DE850FE92831A51 /* Build configuration list for PBXNativeTarget "ShiftWidgetExtension" */;
+			buildPhases = (
+				A2551F47316E584AA9CB3350 /* Sources */,
+				AD4B73C018B65BDFA9DAED6A /* Frameworks */,
+				6D6D17EAF8565DE8BF31BD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShiftWidgetExtension;
+			productName = ShiftWidgetExtension;
+			productReference = 923B7EFCE6F55EA795C9569C /* ShiftWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5AE07C91D6650B987528392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 0;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					272C7391B58D544D8F72E79C = {
+						CreatedOnToolsVersion = 15.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					831B2282468753829DE49088 = {
+						CreatedOnToolsVersion = 15.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2BA4C6FCD9965E7C85E3E66F /* Build configuration list for PBXProject "Shift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDB104D47CCF5AC792FAD685;
+			productRefGroup = 1F6E5020166351519283B4B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				831B2282468753829DE49088 /* ShiftWidgetExtension */,
+				272C7391B58D544D8F72E79C /* Shift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D6D17EAF8565DE8BF31BD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		772E72B64A895884B64D6EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D500EE3CD459C3AD116194 /* Sources/ShiftAppTarget/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7859CD8A89E65D0F8AE136EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457DB5776B865015B1AA8430 /* Sources/ShiftAppTarget/ShiftApplication.swift in Sources */,
+				178E469B6401578983718D77 /* Sources/Shift/UI/MainTabView.swift in Sources */,
+				FF8ABEB7509B570B8FB3F743 /* Sources/Shift/UI/Settings/DiagnosticsLogView.swift in Sources */,
+				FE25B15BD4305D18B59DD5C6 /* Sources/Shift/UI/Settings/SettingsView.swift in Sources */,
+				6A8DB4AD48FF5965B4648846 /* Sources/Shift/UI/Settings/SubSettingsViews.swift in Sources */,
+				922521261DEF568280DD0E50 /* Sources/Shift/UI/Widget/ShiftWidget.swift in Sources */,
+				D67717E5B6A953FE9B942190 /* Sources/Shift/UI/Browser/BookmarksHistoryView.swift in Sources */,
+				F5F2A63F4AC85DBBAFFEFA26 /* Sources/Shift/UI/Browser/BrowserPageMenuView.swift in Sources */,
+				400A0A5F85D85C81942F970D /* Sources/Shift/UI/Browser/BrowserTabOverviewView.swift in Sources */,
+				794DA2A75A8B5295A647F8B5 /* Sources/Shift/UI/Browser/BrowserView.swift in Sources */,
+				7FB88B1626B55215BF9C737F /* Sources/Shift/UI/Browser/FindOnPageView.swift in Sources */,
+				7236355762845378B49CC0E1 /* Sources/Shift/UI/Browser/SnifferHUDView.swift in Sources */,
+				95E19F0F94795E5FBB4303CB /* Sources/Shift/UI/Components/AppleStyleComponents.swift in Sources */,
+				918157663AE7527DAA8DA437 /* Sources/Shift/UI/Components/MultiSegmentProgressBar.swift in Sources */,
+				D6E0DDDBD99E5DB69687A96D /* Sources/Shift/UI/Components/PlatformHelpers.swift in Sources */,
+				C9ED302D8C1C563B87626274 /* Sources/Shift/UI/Components/SpeedChartView.swift in Sources */,
+				E3BD4A843D255934A5615017 /* Sources/Shift/UI/Files/FilesListView.swift in Sources */,
+				99F5FF15825E57849D0C9402 /* Sources/Shift/UI/Files/MediaPlayerView.swift in Sources */,
+				00D5502413485EF1BBE88287 /* Sources/Shift/UI/Downloads/BatchDownloadSheet.swift in Sources */,
+				C6E5B9FB1F3B5DA68BD637E8 /* Sources/Shift/UI/Downloads/ChangeURLSheet.swift in Sources */,
+				C62CAFFA5099570DACDA8166 /* Sources/Shift/UI/Downloads/DownloadDetailView.swift in Sources */,
+				3FDA3EC854605586A5E18B1B /* Sources/Shift/UI/Downloads/DownloadRowView.swift in Sources */,
+				D770D3F4582253E99919261D /* Sources/Shift/UI/Downloads/DownloadsListView.swift in Sources */,
+				8BEC4247504D5F319A113FDE /* Sources/Shift/UI/Downloads/NewDownloadSheet.swift in Sources */,
+				5E58FABCDB4F5F098381AF69 /* Sources/Shift/Core/Sniffer/ContentBlocker.swift in Sources */,
+				52C9FD7CEA04561ABD0C2E7D /* Sources/Shift/Core/Sniffer/ShiftMediaSniffer.swift in Sources */,
+				B0E106CBAE2157BDA5608026 /* Sources/Shift/Core/Models/AppSettings.swift in Sources */,
+				233C76AF7FD65B1AA035F7E1 /* Sources/Shift/Core/Models/DownloadSegment.swift in Sources */,
+				FE71970BDC6E5E8D8A9A1799 /* Sources/Shift/Core/Models/DownloadTask.swift in Sources */,
+				CEEBB028C3B45D2996DFA0DD /* Sources/Shift/Core/Models/SniffedMedia.swift in Sources */,
+				8A1BB71DC63B54FE85705313 /* Sources/Shift/Core/Models/TaskCategory.swift in Sources */,
+				25FE66D3F67F562EACAAF11C /* Sources/Shift/Core/Models/TorrentMeta.swift in Sources */,
+				A4A5B897C932569495D802B2 /* Sources/Shift/Core/Models/WidgetModels.swift in Sources */,
+				B632CFACE71A5EB2B129836D /* Sources/Shift/Core/Storage/FileStorageService.swift in Sources */,
+				7DC442F6AA4F589EB0A336BA /* Sources/Shift/Core/Storage/TaskManager.swift in Sources */,
+				69E770FC80FE523399F2752B /* Sources/Shift/Core/Browser/BrowserModels.swift in Sources */,
+				E877831A0EF958C0BD14E82A /* Sources/Shift/Core/Browser/BrowserTabManager.swift in Sources */,
+				D255B537E6315030A5FDC9ED /* Sources/Shift/Core/Engine/BackgroundManager.swift in Sources */,
+				CD5AF9DD7E415D048140C2D2 /* Sources/Shift/Core/Engine/ChunkedDownloader.swift in Sources */,
+				0248AA750DB25D4BBC82426D /* Sources/Shift/Core/Engine/GoogleDriveURLResolver.swift in Sources */,
+				7DA3D97EA4D25FB297098297 /* Sources/Shift/Core/Engine/HLSStreamDownloader.swift in Sources */,
+				721996601FDE55B88B32743F /* Sources/Shift/Core/Engine/ShiftDownloadEngine.swift in Sources */,
+				D172AD2F3A25557FA9D7C5E3 /* Sources/Shift/Core/Engine/SpeedLimiter.swift in Sources */,
+				480DE110EB3C5B91A939AD64 /* Sources/Shift/Core/Engine/TorrentEngine.swift in Sources */,
+				EA4DF3CEF458511DA60AD180 /* Sources/Shift/Core/Engine/UniversalURLResolver.swift in Sources */,
+				0A6AAC1DAA675C8592FE6367 /* Sources/Shift/Core/Services/BackgroundDownloadService.swift in Sources */,
+				CD493609BAF35D559CA47C68 /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift in Sources */,
+				74B437A351AB57C09AE7DE1B /* Sources/Shift/Core/Services/ShiftLogger.swift in Sources */,
+				8CE4CD9FFBAB560F96CB16F6 /* Sources/Shift/Core/Services/WidgetDataManager.swift in Sources */,
+				E562287229295913B10D6E46 /* Sources/Shift/App/AppEnvironment.swift in Sources */,
+				811E843DCEB054AE9D7DC0EF /* Sources/Shift/App/ShiftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2551F47316E584AA9CB3350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37DACD1367E95E43A35A25F4 /* Sources/Shift/UI/Widget/ShiftWidget.swift in Sources */,
+				E986371570225CF1957C80D9 /* Sources/Shift/Core/Models/DownloadSegment.swift in Sources */,
+				4249F0C4D787535194630030 /* Sources/Shift/Core/Models/DownloadTask.swift in Sources */,
+				69529D36AEFE5A3F90097619 /* Sources/Shift/Core/Models/TaskCategory.swift in Sources */,
+				703243178B97568981FFE7FC /* Sources/Shift/Core/Models/WidgetModels.swift in Sources */,
+				4FE40CC6209B52EC850D977B /* Sources/Shift/Core/Services/KeychainWidgetBridge.swift in Sources */,
+				F97326E11BC652EA961FF167 /* Sources/Shift/Core/Services/WidgetDataManager.swift in Sources */,
+				142819A265CE57C2A5A96586 /* Sources/ShiftWidgetTarget/ShiftWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D346FEB3E1315E33BA625E22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 831B2282468753829DE49088 /* ShiftWidgetExtension */;
+			targetProxy = C5774106BCD55969B89D6E9F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01C135EBA83F5436940FA777 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDEFINED_VARIABLES = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		33A26C1C23045E3990004F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E253BBE82675DC1A716B0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sources/ShiftAppTarget/Shift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = TGXUK58FC4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/ShiftAppTarget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shift;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shift.downloadmanager;
+				PRODUCT_NAME = Shift;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BCB8E60086054CCAC1D247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sources/ShiftWidgetTarget/ShiftWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = TGXUK58FC4;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/ShiftWidgetTarget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shift.downloadmanager.widget;
+				PRODUCT_NAME = ShiftWidgetExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BFDCED1509F5AEF8C9BD728 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Sources/ShiftWidgetTarget/ShiftWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = TGXUK58FC4;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/ShiftWidgetTarget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shift;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shift.downloadmanager.widget;
+				PRODUCT_NAME = ShiftWidgetExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AEAFA5BD7E7E58BC846A17E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sources/ShiftAppTarget/Shift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = TGXUK58FC4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Sources/ShiftAppTarget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Shift;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shift.downloadmanager;
+				PRODUCT_NAME = Shift;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BA4C6FCD9965E7C85E3E66F /* Build configuration list for PBXProject "Shift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01C135EBA83F5436940FA777 /* Debug */,
+				33A26C1C23045E3990004F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A303A428792C583B99CB9E10 /* Build configuration list for PBXNativeTarget "Shift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E253BBE82675DC1A716B0E4 /* Debug */,
+				AEAFA5BD7E7E58BC846A17E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7FEB9854DE850FE92831A51 /* Build configuration list for PBXNativeTarget "ShiftWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFDCED1509F5AEF8C9BD728 /* Debug */,
+				9BCB8E60086054CCAC1D247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5AE07C91D6650B987528392 /* Project object */;
+}
